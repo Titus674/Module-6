@@ -1,3 +1,4 @@
+
 # 🐍 Python OOP: Operator Overloading (Less Than `<`)
 
 ## 🎯 AIM
@@ -25,7 +26,21 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
-
+```
+class A:
+    def __init__(self, a):
+        self.a = a
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+ob1 = A(10)
+ob2 = A(20)
+print(ob1 < ob2)
+```
 ## Output
+![441550336-81b51e67-89c2-4449-a91a-3eb08234f07f](https://github.com/user-attachments/assets/2fb1eab6-7912-41ed-8242-581fc32d7d75)
 
 ## Result
+Thus,the python program Code Execution Successful
